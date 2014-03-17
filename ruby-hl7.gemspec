@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     "lib/ruby-hl7.rb",
      "lib/segments/evn.rb",
+     "lib/segments/in1.rb",
      "lib/segments/msa.rb",
      "lib/segments/msh.rb",
      "lib/segments/nte.rb",
@@ -48,15 +49,16 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.4}
   s.summary = %q{Ruby HL7 Library}
   s.test_files = [
+    "test/test_helper.rb",
     "test/test_basic_parsing.rb",
-     "test/test_child_segment.rb",
-     "test/test_default_segment.rb",
-     "test/test_dynamic_segment_def.rb",
-     "test/test_msa_segment.rb",
-     "test/test_obr_segment.rb",
-     "test/test_obx_segment.rb",
-     "test/test_pid_segment.rb",
-     "test/test_speed_parsing.rb"
+    "test/test_child_segment.rb",
+    "test/test_default_segment.rb",
+    "test/test_dynamic_segment_def.rb",
+    "test/test_msa_segment.rb",
+    "test/test_obr_segment.rb",
+    "test/test_obx_segment.rb",
+    "test/test_pid_segment.rb",
+    "test/test_speed_parsing.rb"
   ]
 
   if s.respond_to? :specification_version then
